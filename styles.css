@@ -288,10 +288,194 @@ footer a {
 }
 
 
-
-
-
-
 /* MEDIA QUERY (medium) */
+@media (min-width: 600px) {
+  
+    main {
+        max-width: 800px;
+    }
+
+    header {
+        padding: 3rem 2rem 2rem;
+    }
+
+    header img {
+        width: 220px;
+    }
+
+    nav ul {
+        gap: 3rem;
+    }
+
+    section {
+        padding: 1rem 1rem;
+    }
+
+    .ourOfferings {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0,1fr));
+        column-gap: 1rem;
+        row-gap: 1rem;
+    }
+
+    .ourOfferings h2 {
+        grid-column: 1/-1;
+    }
+
+    .ourOfferings article {
+        margin-bottom: 0;
+    }
+
+    .ourOfferings .third {
+        grid-column: 1/-1;
+    }
+
+    .gallery {
+        display: grid;
+        grid-template-columns:  repeat(2, minmax(0,1fr));
+        column-gap: 1rem;
+        row-gap: 1rem;
+    }
+
+    .gallery h2, 
+    .gallery > p,
+    .gallery .button {
+        grid-column: 1/-1;
+    }
+
+    .gallery figure {
+        margin-bottom: 0;
+    }
+
+}
+
 /* MEDIA QUERY (large) */
+@media (min-width: 900px) {
+
+    main {
+        max-width: 1200px;
+    }
+
+    p {
+        font-size: 1.2rem;
+        line-height: 1.7rem;
+    }
+
+    section {
+        padding: 2rem 2rem
+    }
+
+    nav ul {
+        gap: 10rem;
+    }
+
+    nav a {
+        font-size: 2rem;
+    }
+
+    .welcome {
+        padding: 4rem 2rem 3rem;
+    }
+
+    .ourOfferings {
+        display: grid;
+        grid-template-columns: repeat(2, minmax(0,1fr));
+        gap: 1rem 1rem;
+        padding: 2rem 2rem;
+    }
+
+    .ourOfferings h3 {
+        font-size: 2rem;
+    }
+
+
+   .ourOfferings p,
+   .ourOfferings ul {
+        font-size: 1rem;
+        line-height: 1.5rem;
+   }
+
+   .gallery {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0,1fr));
+        padding: 2rem 2rem;
+        gap: 1rem 1rem;
+   }
+
+   .gallery figure p {
+        font-size: 1rem;
+   }
+
+   .button {
+        padding: 1rem;
+        font-size: 1.5rem;
+   }
+
+   footer {
+        padding-top: 4rem;
+   }
+
+   footer address p {
+        padding: 5px;
+        font-size: 1.3rem;
+   }
+
+   footer div {
+        padding: 5px;
+        font-size: 1.3rem;
+   }
+}
+
 /* MEDIA QUERY (xl) */
+
+@media (min-width: 1200px) {
+
+    main {
+        max-width: 2000px;
+    }
+
+    h1 {
+        font-size: 4rem;
+    }
+
+    h2 {
+        font-size: 2rem;
+    }
+
+    p {
+        font-size: 1.5rem;
+        line-height: 1.9rem;
+    }
+
+    header img {
+        width: 300px;
+    }
+
+    header p {
+        font-size: 1.2rem;
+    }
+
+  
+    nav ul {
+        gap: 25rem;
+    }
+
+    nav a {
+        font-size: 2rem;
+    }
+
+    .welcome, 
+    .ourOfferings,
+    .gallery {
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+   .gallery {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0,1fr));
+        padding: 2rem 2rem;
+        gap: 2rem 2rem;
+   }
+}
