@@ -187,7 +187,8 @@ section {
     padding-bottom: 10px;
 }
 
-.ourOfferings p, ul {
+.ourOfferings p, 
+.ourOfferings ul {
     color: var(--linen);
     font-size: 0.9rem;
 }
@@ -216,14 +217,14 @@ section {
 /* GALLERY */
 
 .gallery h2{
-    padding: 1rem 0rem 0rem;
+    padding: 1rem 0 0;
 }
 
-.gallery p {
+.gallery > p {
     padding-bottom: 1rem;
 }
 
-.gallery figure p {
+.gallery figcaption {
     padding-bottom: 3px;
     padding-top: 5px;
     font-size: 0.75rem;
@@ -250,6 +251,8 @@ section {
 /* GALLERY BUTTON*/
 .button {
     display: flex;
+    justify-content: center;
+    align-items: center;
     margin-top: 0.75rem;
     padding: 0.5rem 1.5rem;
     margin-bottom: 0.75rem;
@@ -402,8 +405,15 @@ footer a {
         gap: 1rem 1rem;
    }
 
-   .gallery figure p {
+   .gallery h2,
+   .gallery > p, 
+   .gallery .button {
+    grid-column: 1/-1;
+   }
+
+   .gallery figure figcaption {
         font-size: 1rem;
+        padding: 1rem;
    }
 
    .button {
